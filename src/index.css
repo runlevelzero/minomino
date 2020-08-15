@@ -1,13 +1,78 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/* ***** */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height:100vh;
+  font-family: 'Open Sans', sans-serif;
+  background-color:#252525;
+  color:#fff;
+}
+#root {
+  height:100%;
+}
+.App {
+  height:100%;
+  display: grid;
+
+  grid-template-rows: 1fr 8fr;
+  text-align: left;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* minomino CSS */
+
+.minoHeader {
+  text-align: left;
+}
+span.minoHeader {
+  padding-left: .25em;
+  margin: 0;
+  font-size: 10em;
+}
+span.minoSubHeader {
+  padding-left: .25em;
+  margin: 0;
+  font-size: 3em;
+}
+
+.minoUIText {
+  padding-left: .25em;
+  margin: 0;
+  font-size: 2em;
+}
+
+.minoUITextMajor {
+  padding-left: .25em;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.minoGameArea {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+.minoGameAreaSinglePlayer {
+  height:100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.minoSidebar {
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  /* width:360px; */
+}
+.minoFlexibleSidebar {
+  display: flex;
+  flex-direction: column;
+}
+.minoScoreBlock {
+  padding-left: .25em;
+  justify-content: left;
+  text-align: left;
 }
