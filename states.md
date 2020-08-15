@@ -1,5 +1,5 @@
 # State Document
----
+
 ## GameArea.js
 
 `board`
